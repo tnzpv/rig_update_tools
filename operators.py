@@ -36,7 +36,7 @@ class CopySkinning(bpy.types.Operator):
 
 
 class TransferMeshesData(bpy.types.Operator):
-    """ Transfer Meshes Data from active object to selected objects"""
+    """ Transfer Meshes Data from old objects (with '_todel' suffix) to new objects """
     bl_idname = "scene.transfer_meshes_data"
     bl_label = "transfer_meshes_data"
 
@@ -50,7 +50,7 @@ class TransferMeshesData(bpy.types.Operator):
 
 
 class TransferMeshesDrivers(bpy.types.Operator):
-    """ Transfer Meshes Drivers from todel objects to new objects"""
+    """ Transfer Meshes Drivers from old objects(with '_todel' suffix) to new objects"""
     bl_idname = "scene.transfer_meshes_drivers"
     bl_label = "transfer_meshes_drivers"
 
